@@ -40,7 +40,6 @@ public class ConfigManager {
             if (in == null) {//in case if the file isn't found
                 throw new IllegalStateException("Missing " + resourceName + " on class path");
             }
-            //Properties p = new Properties();
             props.load(in);//read all the input lines from the stream
             return props;//returns an object with all the properties read
         } catch (IOException e) {
@@ -70,7 +69,6 @@ public class ConfigManager {
         return props.getProperty(API_TIMEOUT).trim();
     }
 
-
     public String browser() {
         return props.getProperty(BROWSER).trim().toLowerCase();
     }
@@ -92,6 +90,4 @@ public class ConfigManager {
             );
         }
     }
-
-
 }

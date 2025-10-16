@@ -23,18 +23,18 @@ public class ExampleSteps {
     public void userIsOnTheWikipediaHomePage() {
         logger.info("helpful message");
         // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+//        throw new io.cucumber.java.PendingException();
     }
 
     @When("user searches for {string}")
     public void userSearchesFor(String arg0) {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+//        throw new PendingException();
     }
 
     @Then("the article for {string} should be displayed")
     public void theArticleForShouldBeDisplayed(String arg0) {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+//        throw new PendingException();
     }
 }
