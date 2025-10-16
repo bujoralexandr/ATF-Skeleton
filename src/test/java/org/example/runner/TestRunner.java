@@ -17,8 +17,10 @@ import static io.cucumber.core.options.Constants.PLUGIN_PROPERTY_NAME;
  */
 @Suite
 @SelectPackages("org.example.steps")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.example.steps")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.example.hooks")
+@ConfigurationParameter(
+        key = GLUE_PROPERTY_NAME,
+        value = "org.example.steps,org.example.hooks"
+)
 @SelectClasspathResource("features")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, summary")
 public class TestRunner {
